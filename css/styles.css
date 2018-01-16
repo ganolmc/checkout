@@ -1,5 +1,63 @@
+
 /*======GENERAL=========*/
 body {
-	background-color: #eceef4;
-	
+	background-color: #eceef4;	
+	font-family: Proxima Nova Regular, Arial, sans-serif;
+	font-size: 16px;
 }
+.wrapper {
+	max-width: 1140px;
+	margin: auto;
+}
+.btn {
+	background-color: #eceef4;
+	border-radius: 4px;
+	border: 1px solid #c9d0e1;
+	padding: 15px 30px;
+	color: #a5abc5;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+/*======HEDAER=========*/
+.header {
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+.header__logo {
+	width: 100px;
+	height: 100px;
+}
+
+
+/*======GENERAL=========*/
+/*======GENERAL=========*/
+/*======GENERAL=========*/
+/*======GENERAL=========*/
+/*======GENERAL=========*/
+/*======GENERAL=========*/
+/*======GENERAL=========*/
+/*======GENERAL=========*/
+/*======GENERAL=========*/
+/*======GENERAL=========*/
+/*======GENERAL=========*/
+/*======GENERAL=========*/
+/*======GENERAL=========*/
+/*======FONT-AWESOME=========*/
+.fa-long-arrow-alt-left{
+	margin: 0 10px 0 0;
+	font-size: 20px;
+}
+.fa-user {
+	margin: 0 10px 0 0;
+	font-size: 16px;
+}
+
