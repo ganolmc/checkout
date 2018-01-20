@@ -4,6 +4,13 @@ body {
 	background-color: #eceef4;	
 	font-family: Proxima Nova Regular, Arial, sans-serif;
 	font-size: 16px;
+	color: #a5abc5;
+	letter-spacing: 1px;
+}
+a {
+	text-decoration: none;
+	color: #6e768f;
+	font-weight: bold;
 }
 .wrapper {
 	max-width: 1140px;
@@ -13,16 +20,35 @@ body {
 	background-color: #eceef4;
 	border-radius: 4px;
 	border: 1px solid #c9d0e1;
-	padding: 15px 30px;
+	padding: 20px 30px;
 	color: #a5abc5;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+}
+.btn-active {
+	background-color: #5fcac6;
+	color: #fff;
+	border-color: #54aca9;
+}
+/*======MAIN=========*/
+.main {
+	background-color: #fff;
+	border-radius: 4px;
+	border: 1px solid #c9d0e1;
+	margin: 60px 0;
 }
 /*======HEDAER=========*/
 .header {
-	width: 100%;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -31,15 +57,145 @@ body {
 	justify-content: space-between;
 	-ms-align-items: center;
 	align-items: center;
+	padding: 60px 0 0 0; 
 }
 .header__logo {
 	width: 100px;
 	height: 100px;
 }
+/*======ORDER=========*/
+.order {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	border-bottom: 1px solid #c9d0e1;
+}
+.order__cart {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	padding:10px;
+}
+.order__cart-title {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	color: #6e768f;
+	padding: 10px;
+}
+.order__cart-details {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 10px 10px 30px;
+}
+.order__cart-details-block {
+	padding: 0 20px;
+	min-width: 92px;
+}
+.order__cart-details-block-heading {
+	font-weight: bold;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #6e768f;
+}
+.order__cart-details-block-description {
+	font-size: 14px;
+	letter-spacing: 1	px;
+}
+.order__cart-buttons {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.order__cart-buttons > .btn {
+	width: 170px;
+}
+.order__help {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	border-left: 1px solid #c9d0e1;
+	max-width: 337px;
+	padding: 10px;
+}
+.order__help-left {
+	width: 180px;
+	text-align: center;
+}
+
+.order__help-right-heading {
+	font-weight: bold;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #6e768f;
+}
+.order__help-right-contacts {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-start;
+}
+.order__help-right-text {
+	line-height: 20px;
+	font-size: 14px;
+}
+.order__help-right-contacts > a {
+	padding-right: 10px;
+	font-size: 14px;
+}
+.select {
+	text-align: center;
+}
+.select__heading {
+	color: #6e768f;
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-size: 20px;
+	letter-spacing: 3px;
+	padding: 80px 0 60px 0;
+}
+.select__heading:after {
+	content: '';
+	width: 505px;
+	border-bottom: 1px solid #c9d0e1;
+	position: relative;
+	display: block;
+	margin: auto;
+	margin-top: 20px;
 
 
-/*======GENERAL=========*/
-/*======GENERAL=========*/
+
+}
+
+/*======SELECT=========*/
+
 /*======GENERAL=========*/
 /*======GENERAL=========*/
 /*======GENERAL=========*/
@@ -59,5 +215,14 @@ body {
 .fa-user {
 	margin: 0 10px 0 0;
 	font-size: 16px;
+}
+.fa-clipboard {
+	margin: 0 20px 0 0;
+	font-size: 24px;
+}
+.fa-life-ring {
+	color: #6e768f;
+	font-size: 30px;
+	padding-top: 6px;
 }
 
