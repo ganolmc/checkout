@@ -147,7 +147,6 @@ a {
 	width: 180px;
 	text-align: center;
 }
-
 .order__help-right-heading {
 	font-weight: bold;
 	font-size: 14px;
@@ -170,6 +169,7 @@ a {
 	padding-right: 10px;
 	font-size: 14px;
 }
+/*======SELECT=========*/
 .select {
 	text-align: center;
 }
@@ -189,12 +189,61 @@ a {
 	display: block;
 	margin: auto;
 	margin-top: 20px;
-
-
-
+}
+.select__label-wrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 80px;
+}
+.select__item {
+	height: 200px;
+	width: 300px;
+	background-color: #f7f7fa;
+	border: 1px solid #d7d9e0;
+	border-radius: 4px;
+	position: relative;
+}
+.select__item-wrapper {
+	height: 200px;
+	width: 300px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+.select__item-img {
+	height: 100px;
+}
+.select__item-text {
+	color: #9098b8;
+	font-weight: bold;
+}
+input[name=radio]:checked + .select__item-wrapper {
+	border: 3px solid #76a7e1;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+input[name=radio]:checked + .select__item-wrapper:before {
+	content: url("../imgs/check-circle-sm.png");
+	position: absolute;
+	top: -15px;
+	right: -10px;
 }
 
-/*======SELECT=========*/
+
 
 /*======GENERAL=========*/
 /*======GENERAL=========*/
