@@ -6,6 +6,7 @@ body {
 	font-size: 16px;
 	color: #a5abc5;
 	letter-spacing: 1px;
+	counter-reset: section;
 }
 a {
 	text-decoration: none;
@@ -40,6 +41,48 @@ a {
 	color: #fff;
 	border-color: #54aca9;
 }
+.input-file {
+	background-color: #eceef4;
+	border-radius: 4px;
+	border: 1px solid #c9d0e1;
+	padding: 20px 30px;
+	color: #9098b8;
+	font-size: 16px;
+	display: inline-block;
+	margin: 60px 0 30px 40px;
+
+}
+.section-heading {
+	padding: 0 0 0 40px;
+	font-weight: 500;
+	color: #6e768f;
+	font-size: 22px;
+}
+.section-heading-text {
+	padding-left: 20px;
+}
+.section-heading-small {
+	color: #9fa5b8;
+	font-size: 12px;
+}
+.section-heading:before {
+	counter-increment: section;
+    content: counter(section);
+    font-size: 20px;
+    font-weight: light;
+    color: #6e768f;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #6e768f;
+    border-radius: 50%;
+    display: inline-block;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 11px 0;
+ }
+.center {
+	text-align: center;
+}
 /*======MAIN=========*/
 .main {
 	background-color: #fff;
@@ -67,7 +110,7 @@ a {
 .order {
 	display: -webkit-flex;
 	display: -moz-flex;
-	display: -ms-flex;
+	display: -ms-flexef;
 	display: -o-flex;
 	display: flex;
 	border-bottom: 1px solid #c9d0e1;
@@ -237,15 +280,37 @@ input[name=radio]:checked + .select__item-wrapper {
 	box-sizing: border-box;
 }
 input[name=radio]:checked + .select__item-wrapper:before {
+	/*font-family: Font Awesome\ 5 Free;*/
 	content: url("../imgs/check-circle-sm.png");
+	/*content: "\f058";*/
 	position: absolute;
 	top: -15px;
 	right: -10px;
 }
+/*======CHOOSE=========*/
+ .choose__table {
+	border: 1px solid #e6e8ee;
+	padding: 40px;
+	margin: 10px auto 120px;
+	text-align: left;
+	color: #a5abc5;
+	border-radius: 4px;
+	width: 93%;
+}
+.choose__table-th {
+	text-transform: uppercase;
+	font-size: 14px;
+	padding: 0 40px 15px 0;
+}
+.choose__table-td {
+	padding: 15px 40px 0 0;
+	font-size: 14px;
+}
 
 
 
-/*======GENERAL=========*/
+
+
 /*======GENERAL=========*/
 /*======GENERAL=========*/
 /*======GENERAL=========*/
@@ -274,4 +339,14 @@ input[name=radio]:checked + .select__item-wrapper:before {
 	font-size: 30px;
 	padding-top: 6px;
 }
-
+.fa-cloud-upload-alt {
+	font-size: 16px;
+	padding: 0 15px 0 0;
+	color: #9098b8;
+}
+.fa-file-alt {
+	padding: 0 10px 0 0;
+}
+.fa-trash {
+	color: #a5abc5;
+}
