@@ -174,8 +174,8 @@ a {
 	justify-content: space-around;
 }
 .order__cart-buttons > .btn {
-	width: 170px;
-	padding: 20px 30px;
+	width: 160px;
+	padding: 20px 25px;
 }
 .order__help {
 	display: -webkit-flex;
