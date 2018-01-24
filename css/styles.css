@@ -211,7 +211,7 @@ a {
 }
 .order__help-right-contacts > a {
 	padding-right: 10px;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 /*======SELECT=========*/
@@ -390,7 +390,7 @@ input[name=radio]:checked + .select__item-wrapper:before {
 .fa-life-ring {
 	color: #6e768f;
 	font-size: 30px;
-	padding-top: 6px;
+	padding-top: 8px;
 }
 .fa-cloud-upload-alt {
 	font-size: 16px;
@@ -408,3 +408,9 @@ input[name=radio]:checked + .select__item-wrapper:before {
 	padding: 0 10px;
 	font-size: 14px;
 }
+/*======CROSS-BROWSERS=======*/
+@-moz-document url-prefix() {
+	.order__help-left {
+		width: 68px;
+	}
+} 
