@@ -413,4 +413,10 @@ input[name=radio]:checked + .select__item-wrapper:before {
 	.order__help-left {
 		width: 68px;
 	}
+	.choose__btn-add {
+		padding: 17px 40px 17px;
+	}
+	.fa-plus {
+		font-size: 15px;
+	}
 } 
