@@ -188,7 +188,7 @@ a {
 	padding: 10px;
 }
 .order__help-left {
-	width: 68px;
+	width: 180px;
 	text-align: center;
 }
 .order__help-right-heading {
@@ -207,7 +207,7 @@ a {
 }
 .order__help-right-text {
 	line-height: 20px;
-	font-size: 14px;
+	font-size: 12px;
 }
 .order__help-right-contacts > a {
 	padding-right: 10px;
