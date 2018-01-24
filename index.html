@@ -64,10 +64,10 @@
 						</div>
 					</div>	
 					<div class="order__cart-buttons">
-							<button class="btn btn-active">
+							<button class="btn btn-active width">
 								Place order
 							</button>
-							<button class="btn">
+							<button class="btn width">
 								Print a quote
 							</button>
 					</div>		
@@ -92,21 +92,21 @@
 				</h2>
 				<div class="select__label-wrapper">	
 					<label for="website" class="select__item">
-						<input hidden type="radio" name="radio" value="website" id="website">
+						<input hidden required type="radio" name="radio" value="website" id="website">
 						<div class="select__item-wrapper">
 							<img src="imgs/website.png" alt="Website" class="select__item-img">
 							<p class="select__item-text">Website</p>
 						</div>
 					</label>
 					<label for="documents" class="select__item">
-						<input hidden type="radio" name="radio" value="documents" id="documents">
+						<input hidden required type="radio" name="radio" value="documents" id="documents">
 						<div class="select__item-wrapper">
 							<img src="imgs/documents.png" alt="Documents" class="select__item-img">
 							<p class="select__item-text">Documents</p>
 						</div>
 					</label>
 					<label for="social-account" class="select__item">
-						<input hidden type="radio" name="radio" value="social-account" id="social-account">
+						<input hidden required type="radio" name="radio" value="social-account" id="social-account">
 						<div class="select__item-wrapper">
 							<img src="imgs/social-account.png" alt="Social Account" class="select__item-img">
 							<p class="select__item-text">Social Account</p>
@@ -114,34 +114,69 @@
 					</label>					
 				</div>
 			</section>
-			<section class="choose">
+			<section class="upload">
 				<h3 class="section-heading"><span class="section-heading-text">Upload your documents</span> <span class="section-heading-small">(Doc, Docx, Text, PDF, Markdown)</span></h3>
 				<label for="file">
-					<input hidden type="file" name="file" id="file">
+					<input hidden reqiured type="file" name="file" id="file">
 					<span class="input-file">
 						<i class="fas fa-cloud-upload-alt"></i>Upload a new file
 					</span>
 				</label>
-				<table class="choose__table">
+				<table class="upload__table">
 					<tr>
-						<th class="choose__table-th">File name</th>
-						<th class="choose__table-th">File size</th>
-						<th class="choose__table-th">Number of words</th>
-						<th class="choose__table-th center">Remove</th>
+						<th class="upload__table-th">File name</th>
+						<th class="upload__table-th">File size</th>
+						<th class="upload__table-th">Number of words</th>
+						<th class="upload__table-th center">Remove</th>
 					</tr>
 					<tr>
-						<td class="choose__table-td"><i class="fas fa-file-alt"></i>business_operations.docx</td>
-						<td class="choose__table-td">78kb</td>
-						<td class="choose__table-td">842</td>
-						<td class="choose__table-td center"><a href="#"><i class="fas fa-trash"></i></a></td>
+						<td class="upload__table-td"><i class="fas fa-file-alt"></i>business_operations.docx</td>
+						<td class="upload__table-td">78kb</td>
+						<td class="upload__table-td">842</td>
+						<td class="upload__table-td center"><a href="#"><i class="fas fa-trash"></i></a></td>
 					</tr>
 					<tr>
-						<td class="choose__table-td"><i class="fas fa-file-alt"></i>business_financial.docx</td>
-						<td class="choose__table-td">26kb</td>
-						<td class="choose__table-td">2,326</td>
-						<td class="choose__table-td center"><a href="#"><i class="fas fa-trash"></i></a></td>
+						<td class="upload__table-td"><i class="fas fa-file-alt"></i>business_financial.docx</td>
+						<td class="upload__table-td">26kb</td>
+						<td class="upload__table-td">2,326</td>
+						<td class="upload__table-td center"><a href="#"><i class="fas fa-trash"></i></a></td>
 					</tr>
 				</table>
+			</section>
+			<section class="choose">
+				<h3 class="section-heading"><span class="section-heading-text">Choose your languages pairings</span></h3>
+				<div class="choose__select-wrapper">
+					<span class="choose__text">From</span>
+					<div class="choose__select-wrapper-input">
+						<div class="choose__select-border"></div>
+						<select required class="choose__select" name="lang-from">
+							<option selected class="choose__select-option" value="english">English</option>
+							<option class="choose__select-option" value="arabic">Arabic</option>
+							<option class="choose__select-option" value="kurdish">Kurdish</option>
+						</select>
+					</div>
+				</div>
+				<div class="choose__select-wrapper">
+					<span class="choose__text">To</span>
+					<div class="choose__select-wrapper-input">
+						<div class="choose__select-border"></div>
+						<select required class="choose__select" name="lang-from">
+							<option class="choose__select-option" value="english">English</option>
+							<option selected class="choose__select-option" value="arabic">Arabic</option>
+							<option class="choose__select-option" value="kurdish">Kurdish</option>
+						</select>
+					</div>
+					<div class="choose__select-wrapper-input">
+						<div class="choose__select-border"></div>
+						<select required class="choose__select" name="lang-from">
+							<option  class="choose__select-option" value="english">English</option>
+							<option class="choose__select-option" value="arabic">Arabic</option>
+							<option selected class="choose__select-option" value="kurdish">Kurdish</option>
+						</select>
+					</div>
+					<a href="#"><i class="fas fa-trash choose__icon-add"></i></a>
+					<button class="choose__btn-add btn"><i class="fas fa-plus"></i>Add</button>
+				</div>
 			</section>
 		</main>
 	</div>
