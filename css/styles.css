@@ -244,7 +244,7 @@ a {
 	justify-content: space-around;
 	padding-bottom: 80px;
 }
-.select__item {
+.select__item{
 	height: 200px;
 	width: 300px;
 	background-color: #f7f7fa;
@@ -252,7 +252,7 @@ a {
 	border-radius: 4px;
 	position: relative;
 }
-.select__item-wrapper {
+.select__item-wrapper{
 	height: 200px;
 	width: 300px;
 	display: -webkit-flex;
@@ -276,7 +276,7 @@ a {
 	color: #9098b8;
 	font-weight: bold;
 }
-input[name=radio]:checked + .select__item-wrapper {
+input[name=radio]:checked + .select__item-wrapper{
 	border: 3px solid #76a7e1;
 	border-radius: 4px;
 	box-sizing: border-box;
@@ -358,14 +358,68 @@ input[name=radio]:checked + .select__item-wrapper:before {
 	background-color: #c9d0e1;
 	left: 134px;
 }
+/*======SELECT TONE=========*/
+.select-tone {
+	max-width: 450px;
+	padding: 0 0 60px 0;
+}
+.select-tone__label-wrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+}
+.select-tone__item {
+	position: relative;
+	height: 50px;
+	width: 200px;
+	margin: 20px 0;
+}
+.select-tone__btn-wrapper{
+	height: 50px;
+	width: 200px;
+	background-color: #f7f7fa;
+	border: 1px solid #d7d9e0;
+	border-radius: 4px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	font-weight: light;
+	font-size: 14px;
+}
+input[name=radio]:checked + .select-tone__btn-wrapper{
+	border: 3px solid #76a7e1;
+	border-radius: 4px;
+	box-sizing: border-box;
+	height: 52px;
+	width: 202px;
+}
+input[name=radio]:checked + .select-tone__btn-wrapper:before {
+	/*font-family: Font Awesome\ 5 Free;*/
+	content: url("../imgs/check-circle-sm.png");
+	/*content: "\f058";*/
+	position: absolute;
+	top: -15px;
+	right: -15px;
+}
 
 
 
 
 
-
-
-/*======GENERAL=========*/
 /*======GENERAL=========*/
 /*======GENERAL=========*/
 /*======GENERAL=========*/
@@ -408,7 +462,11 @@ input[name=radio]:checked + .select__item-wrapper:before {
 	padding: 0 10px;
 	font-size: 14px;
 }
-/*======CROSS-BROWSERS=======*/
+.fa-suitcase,  .fa-comments, .fa-bullhorn{
+	font-size: 16px;
+	padding: 0 10px 0 0;
+}
+/*======CROSS-BROWSERNESS=======*/
 @-moz-document url-prefix() {
 	.order__help-left {
 		width: 68px;
