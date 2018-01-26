@@ -12,6 +12,12 @@ a {
 	text-decoration: none;
 	color: #6e768f;
 }
+a:hover {
+	opacity: 0.7;
+}
+button:hover {
+	opacity: 0.7;
+}
 .wrapper {
 	max-width: 1140px;
 	margin: auto;
@@ -34,6 +40,7 @@ a {
 	-ms-align-items: center;
 	align-items: center;
 	justify-content: center;
+	cursor: pointer;
 }
 .btn-active {
 	background-color: #5fcac6;
@@ -210,6 +217,7 @@ a {
 	display: -o-flex;
 	display: flex;
 	justify-content: flex-start;
+	cursor: pointer;
 }
 .order__help-right-text {
 	line-height: 20px;
@@ -250,13 +258,17 @@ a {
 	justify-content: space-around;
 	padding-bottom: 80px;
 }
-.select__item{
+.select__item {
 	height: 200px;
 	width: 300px;
 	background-color: #f7f7fa;
 	border: 1px solid #d7d9e0;
 	border-radius: 4px;
 	position: relative;
+	cursor: pointer;
+}
+.select__item:hover {
+	opacity: 0.7;
 }
 .select__item-wrapper{
 	height: 200px;
@@ -296,6 +308,12 @@ input[name=radio]:checked + .select__item-wrapper:before {
 	right: -10px;
 }
 /*======UPLOAD=========*/
+.input-file {
+ 	cursor: pointer;
+ }
+.input-file:hover {
+	opacity: 0.7;
+}
  .upload__table {
 	border: 1px solid #e6e8ee;
 	padding: 30px;
@@ -341,6 +359,10 @@ input[name=radio]:checked + .select__item-wrapper:before {
 	background: url(../imgs/arrow-down.png) 89% / 15% no-repeat;
 	background-size: 12px;
 	background-color: #eceef4;
+	cursor: pointer;
+}
+.choose__select:hover {
+	opacity: 0.7;
 }
 .choose__select-wrapper-input {
 	position: relative;
@@ -388,6 +410,10 @@ input[name=radio]:checked + .select__item-wrapper:before {
 	height: 52px;
 	width: 200px;
 	margin: 20px 0;
+	cursor: pointer;
+}
+.select-tone__item:hover {
+	opacity: 0.7;
 }
 .select-tone__btn-wrapper{
 	height: 52px;
@@ -438,6 +464,10 @@ input[type=range] {
 	margin-top: 50px;
 	position: relative;
 	outline: none;
+	cursor: pointer;
+}
+input[type=range]:hover {
+	opacity: 0.8;
 }
 input[type=range]::-webkit-slider-thumb {
 	-webkit-appearance: none;
@@ -616,6 +646,10 @@ input[type=password] {
 	align-items: center;
 	font-weight: light;
 	font-size: 14px;
+	cursor: pointer;
+}
+.payment__method-label-wrapper:hover {
+	opacity: 0.7;
 }
 .payment__method-img {
 	height: 30px;
@@ -652,13 +686,11 @@ input[name=radio]:checked + .payment__method-label-wrapper:before {
 	padding: 0 15px;
 	color: #5a607a;
 	font-size: 14px;
-
 }
 .card-number {
 	width: 300px;
 	margin: 0 40px 0 0;
 	background: url(../imgs/visa-grey.png) 95% / 15% no-repeat;
-	
 }
 .card-number::-webkit-inner-spin-button {
 	 -webkit-appearance: none;
@@ -706,12 +738,56 @@ input[name=radio]:checked + .payment__method-label-wrapper:before {
 /*======FOOTER=========*/
 .footer {
 	width: 100%;
-	height: 300px;
 	background-color: #444a62;
+	padding: 100px 0;
 }
 .footer__wrapper {
 	max-width: 1140px;
 	margin: auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.footer__block {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	padding: 10px;
+}
+.footer__block-left {
+	width: 30px;
+}
+.footer__block-right {
+	width: 200px;
+}
+.footer__block-heading {
+	padding: 0 0 15px 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	color: #b3b9d7;
+}
+.footer__block-text {
+	font-size: 14px;
+	font-weight: light;
+	color: #b3b9d7;
+}
+.footer__block-text-address {
+	font-style: normal;
+}
+.footer__block-text-address-p {
+	margin: 0 0 12px 0;
+}
+.footer__block-text-p > a {
+	color: #b3b9d7;
+}
+.footer__logo {
+	height: 120px;
 }
 /*======GENERAL=========*/
 /*======GENERAL=========*/
@@ -760,9 +836,12 @@ input[name=radio]:checked + .payment__method-label-wrapper:before {
 	color: #727895;
 	font-size: 20px;
 }
-.fa-heart{
+.fa-heart, .fa-compass, .fa-share-alt{
 	color: #c6ccea;
 	font-size: 18px;
+}
+.fa-facebook-square, .fa-twitter-square, .fa-linkedin {
+	padding: 0 15px 0 0;
 }
 /*======CROSS-BROWSERNESS=======*/
 @-moz-document url-prefix() {
