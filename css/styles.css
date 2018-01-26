@@ -11,7 +11,6 @@ body {
 a {
 	text-decoration: none;
 	color: #6e768f;
-	font-weight: bold;
 }
 .wrapper {
 	max-width: 1140px;
@@ -95,7 +94,7 @@ a {
 	background-color: #fff;
 	border-radius: 4px;
 	border: 1px solid #c9d0e1;
-	margin: 60px 0;
+	margin: 60px 0 100px 0;
 }
 /*======HEDAER=========*/
 .header {
@@ -438,6 +437,7 @@ input[type=range] {
 	width: 400px;
 	margin-top: 50px;
 	position: relative;
+	outline: none;
 }
 input[type=range]::-webkit-slider-thumb {
 	-webkit-appearance: none;
@@ -529,8 +529,190 @@ input[type=range]:before {
 	font-size: 13px;
 	line-height: 20px;	
 }
-/*======GENERAL=========*/
-/*======GENERAL=========*/
+.payment__sign-in {
+	margin: 40px 0 40px 110px;
+	font-size: 15px;
+	color: #9eb2da;
+}
+.payment__sign-in-link {
+	color: #9eb2da;
+	font-weight: light;
+}
+.payment__sign-in-link:hover {
+	color: #76a7e1;
+	text-decoration: underline;
+}
+.payment__input {
+	margin: 10px 0 10px 110px;
+}
+.payment__input-label {
+	display: block;
+}
+/*======PAYMENT=========*/
+.payment__wrapper-for-inputs {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.payment__input-label {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 15px 0 10px 15px;
+}
+.payment__input-field {
+	border: 1px solid #d7d9e0;
+	border-radius: 4px;
+	height: 40px;
+	width: 280px;
+	padding: 0 15px;
+	color: #5a607a;
+	font-size: 14px;
+}
+.payment__input-field:valid {
+	background: url(../imgs/check-circle-sm.png) 95% / 15% no-repeat;
+	-webkit-background-size: 20px;
+	background-size: 20px;
+}
+.payment__input-field:invalid{
+	background: url(../imgs/invalid.png) 95% / 15% no-repeat;
+	-webkit-background-size: 20px;
+	background-size: 20px;
+}
+input[type=password] {
+	letter-spacing: 8px;
+	font-size: 25px;
+}
+.payment__method {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-start;
+	margin: 20px 0 20px 90px;
+}
+.payment__method-label {
+	position: relative;
+	height: 120px;
+	width: 250px;
+	margin: 20px 20px;
+}
+.payment__method-label-wrapper{
+	height: 120px;
+	width: 250px;
+	background-color: #f7f7fa;
+	border: 1px solid #d7d9e0;
+	border-radius: 4px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	font-weight: light;
+	font-size: 14px;
+}
+.payment__method-img {
+	height: 30px;
+	margin:0 7px;
+}
+input[name=radio]:checked + .payment__method-label-wrapper{
+	border: 3px solid #76a7e1;
+	border-radius: 4px;
+	box-sizing: border-box;
+	height: 122px;
+	width: 252px;
+}
+input[name=radio]:checked + .payment__method-label-wrapper:before {
+	/*font-family: Font Awesome\ 5 Free;*/
+	content: url("../imgs/check-circle-sm.png");
+	/*content: "\f058";*/
+	position: absolute;
+	top: -15px;
+	right: -15px;
+}
+.payment__card {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-start;
+	margin: 20px 0 20px 110px;
+}
+.payment__card-input-field {
+	border: 1px solid #d7d9e0;
+	border-radius: 4px;
+	height: 40px;
+	padding: 0 15px;
+	color: #5a607a;
+	font-size: 14px;
+
+}
+.card-number {
+	width: 300px;
+	margin: 0 40px 0 0;
+	background: url(../imgs/visa-grey.png) 95% / 15% no-repeat;
+	
+}
+.card-number::-webkit-inner-spin-button {
+	 -webkit-appearance: none;
+}
+.expiry-date {
+	width: 120px;
+	margin: 0 40px 0 0;
+	 -webkit-appearance: none;
+}
+.expiry-date::-webkit-inner-spin-button {
+	 -webkit-appearance: none;
+}
+.expiry-date::-webkit-datetime-edit-month-field, .expiry-date::-webkit-datetime-edit-day-field, .expiry-date::-webkit-datetime-edit-year-field {
+	color: #6e768f;
+}
+.code {
+	width: 40px;
+	 -webkit-appearance: none;
+}
+.code::-webkit-inner-spin-button {
+	 -webkit-appearance: none;
+}
+.payment__submit-form {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+	-ms-align-items: center;
+	align-items: center;
+	padding: 0 20px 0 0;
+}
+.payment__submit-form-wrapper {
+	padding: 100px 20px;
+}
+.payment__submit-form-wrapper > .btn {
+	width: 160px;
+	padding: 20px 10px;
+}
+.payment__terms {
+	font-size: 12px;
+	color: #6e768f;
+}
+/*======FOOTER=========*/
+.footer {
+	width: 100%;
+	height: 300px;
+	background-color: #444a62;
+}
+.footer__wrapper {
+	max-width: 1140px;
+	margin: auto;
+}
 /*======GENERAL=========*/
 /*======GENERAL=========*/
 /*======GENERAL=========*/
@@ -577,6 +759,10 @@ input[type=range]:before {
 .fa-info-circle {
 	color: #727895;
 	font-size: 20px;
+}
+.fa-heart{
+	color: #c6ccea;
+	font-size: 18px;
 }
 /*======CROSS-BROWSERNESS=======*/
 @-moz-document url-prefix() {

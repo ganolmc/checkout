@@ -21,6 +21,7 @@
 			<button class="btn"><i class="fas fa-user"></i>Sign in</button>
 		</header>
 		<main class="main">
+		<form id="translate">
 			<section class="order">
 				<div class="order__cart">
 					<div class="order__cart-wrapper">	
@@ -64,10 +65,10 @@
 						</div>
 					</div>	
 					<div class="order__cart-buttons">
-							<button class="btn btn-active width">
+							<button type="submit" id="submit" form="translate" class="btn btn-active width">
 								Place order
 							</button>
-							<button class="btn width">
+							<button type="submit" id="submit" form="translate" class="btn width">
 								Print a quote
 							</button>
 					</div>		
@@ -188,14 +189,14 @@
 								<i class="fas fa-comments"></i>Friendly / Casual
 							</div>
 						</label>
-						<label for="documents1" class="select-tone__item">
-							<input hidden required type="radio" name="radio" value="documents" id="documents1">
+						<label for="documents" class="select-tone__item">
+							<input hidden required type="radio" name="radio" value="documents" id="documents">
 							<div class="select-tone__btn-wrapper">
 								<i class="fas fa-suitcase"></i>Corporate / Pro</button>
 							</div>
 						</label>
-						<label for="social-account1" class="select-tone__item">
-							<input hidden required type="radio" name="radio" value="social-account" id="social-account1">
+						<label for="social-account" class="select-tone__item">
+							<input hidden required type="radio" name="radio" value="social-account" id="social-account">
 							<div class="select-tone__btn-wrapper">
 								<i class="fas fa-bullhorn"></i>Media / Formal
 							</div>
@@ -221,7 +222,100 @@
 					</div>
 				</section>
 			</div>
+			<section class="payment">
+				<h3 class="section-heading"><span class="section-heading-text">Sign up and choose a payment method</span></h3>
+				<div class="payment__sign-in">
+					Already have an account with us?
+					<a class="payment__sign-in-link" href="#">Sign in</a>
+				</div>
+				<div class="payment__input">
+					<label for="name" class="payment__input-label">Full name</label>
+					<input required class="payment__input-field" id="name" type="text" minlength=3 pattern="[a-zA-Z\s\.\-]*$">
+				</div>
+				<div class="payment__wrapper-for-inputs">
+					<div class="payment__input">
+						<label for="name" class="payment__input-label">Email adress</label>
+						<input required class="payment__input-field" id="name" type="email">
+					</div>
+					<div class="payment__input">
+						<label for="name" class="payment__input-label">Choose a password</label>
+						<input required class="payment__input-field" id="name" type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+					</div>
+				</div>
+				<div class="payment__method">
+					<label for="card" class="payment__method-label">
+						<input hidden required type="radio" name="radio" value="card" id="card">
+						<div class="payment__method-label-wrapper">
+							<img src="imgs/visa.png" alt="visa" class="payment__method-img">
+							<img src="imgs/mastercard.png" alt="mastercard" class="payment__method-img">
+						</div>
+					</label>
+					<label for="pay-pal" class="payment__method-label">
+						<input hidden required type="radio" name="radio" value="pay-pal" id="pay-pal">
+						<div class="payment__method-label-wrapper">
+							<img src="imgs/paypal.png" alt="mastercard" class="payment__method-img">
+						</div>
+					</label>
+					<label for="amazon" class="payment__method-label">
+						<input hidden required type="radio" name="radio" value="amazon" id="amazon">
+						<div class="payment__method-label-wrapper">
+							<img src="imgs/amazon.png" alt="mastercard" class="payment__method-img">
+						</div>
+					</label>
+				</div>
+				<div class="payment__card">
+					<div class="payment__card-input">
+						<label for="name" class="payment__input-label">Curd number</label>
+						<input required class="card-number payment__card-input-field" id="name" type="number" pattern="[0-9]{16,16}" autocomplete="cc-number" maxlength=16>
+					</div>
+					<div class="payment__card-input">
+						<label for="name" class="payment__input-label">Expiry date</label>
+						<input required class="expiry-date payment__card-input-field" autocomplete="cc-exp" id="name" type="date">
+					</div>
+					<div class="payment__card-input">
+						<label for="name" class="payment__input-label">Code</label>
+						<input required class="code payment__card-input-field" autocomplete="cc-csc" id="name" type="number" pattern="[0-9]{3}" maxlength=3>
+					</div>					
+				</div>
+				<div class="payment__submit-form">
+					<div class="payment__submit-form-wrapper">
+						<input required type="checkbox" name="terms" value="argee"> 
+						<span class="payment__terms">I agree to the Terms &amp; Conditions</span>
+					</div>
+					<div class="payment__submit-form-wrapper">
+						<button type="submit" id="submit" form="translate" class="btn btn-active width">
+							Place order
+						</button>				
+					</div>
+					<div class="payment__submit-form-wrapper">
+						<button type="submit" id="submit" form="translate" class="btn width">
+							Print a quote
+						</button>							
+					</div>
+				</div>
+			</section>
+			</form>
 		</main>
 	</div>
+	<footer class="footer">
+		<div class="footer__wrapper">
+			<div class="footer__block">
+				<div class="footer__block-left">
+					<i class="far fa-heart"></i>
+				</div>
+				<div class="footer__block-right">
+					<div class="footer__block-heading">
+						What we do
+					</div>
+					<div class="footer__block-text">
+						We provide a full range
+					</div>
+				</div>
+			</div>
+			<div class="footer__block"></div>
+			<div class="footer__block"></div>
+			<div class="footer__block"></div>
+		</div>
+	</footer>
 </body>
 </html>
