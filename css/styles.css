@@ -345,6 +345,9 @@ input[name=radio]:checked + .select__item-wrapper:before {
 	-ms-align-items: center;
 	align-items: center;
 }
+.add-padding {
+	padding-left: 21px;
+}
 .choose__select {
 	border-radius: 4px;
 	border: 1px solid #c9d0e1;
@@ -375,7 +378,8 @@ input[name=radio]:checked + .select__item-wrapper:before {
 	font-weight: bold;
 }
 .choose__btn-add {
-	padding: 16px 40px 16px;
+	padding: 14px 40px 14px;
+	height: 48px;
 }
 .choose__icon-add {
 	padding: 0 20px 0 10px;
@@ -822,7 +826,7 @@ input[name=radio]:checked + .payment__method-label-wrapper:before {
 .fa-plus {
 	color: #9098b8;
 	padding: 0 10px;
-	font-size: 14px;
+	font-size: 12px;
 }
 .fa-suitcase,  .fa-comments, .fa-bullhorn{
 	font-size: 16px;
@@ -1056,6 +1060,9 @@ input[name=radio]:checked + .payment__method-label-wrapper:before {
 		padding: 0;
 		margin: 0;
 	}
+	.footer {
+		padding: 60px 0;
+	}
 }
 @media screen and (max-width: 615px) {
 	.section-heading:before {
@@ -1136,6 +1143,9 @@ input[name=radio]:checked + .payment__method-label-wrapper:before {
 	.payment__submit-form-wrapper {
 		padding: 10px 0;
 	}
+	.footer {
+		padding: 50px 0;
+	}
 }
 @media screen and (max-width: 490px) {
 	.btn {
@@ -1161,6 +1171,9 @@ input[name=radio]:checked + .payment__method-label-wrapper:before {
 	}
 	.fa-life-ring {
 		padding: 10px;
+	}
+	.footer {
+		padding: 30px 0;
 	}
 }
 @media screen and (max-width: 415px) {
