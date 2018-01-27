@@ -1104,6 +1104,9 @@ input[name=radio]:checked + .payment__method-label-wrapper:before {
 	.select__heading {
 		font-size: 16px;
 	}
+	.select__heading:after {
+		width: 250px;
+	}
 	.section-heading-small {
 		padding: 0;
 	}
